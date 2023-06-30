@@ -14,6 +14,9 @@ module.exports = {
         },
         pageColor: {
           50: "#F2F2F2"
+        },
+        buttonColor: {
+          50: '#302F4E'
         }
       }
     },
