@@ -49,7 +49,7 @@ export function Header() {
         </Link>
         <div className="flex items-center mt-2">
           <Link href={"/"}>
-            <img src={Instagram.src} alt="Instagram" className="h-6 w-6" />
+            <img src={User.src} alt="Login" className="h-6 w-6" />
           </Link>
           <Link href={"/"}>
             <img
@@ -58,8 +58,13 @@ export function Header() {
               className="h-6 w-6 ml-3 mr-3"
             />
           </Link>
-          <Link href={"/"}>
-            <img src={User.src} alt="Login" className="h-6 w-6" />
+          <Link
+            href={
+              "https://www.instagram.com/whellerinteriores/?igshid=MzRlODBiNWFlZA%3D%3D"
+            }
+            target="_blank"
+          >
+            <img src={Instagram.src} alt="Instagram" className="h-6 w-6" />
           </Link>
         </div>
       </nav>
@@ -80,7 +85,12 @@ export function Header() {
           <Link href={"/"}>
             <img src={Whatsapp.src} alt="Whatsapp" className="h-6 w-6 mx-4" />
           </Link>
-          <Link href={"/"}>
+          <Link
+            href={
+              "https://www.instagram.com/whellerinteriores/?igshid=MzRlODBiNWFlZA%3D%3D"
+            }
+            target="_blank"
+          >
             <img src={Instagram.src} alt="Instagram" className="h-6 w-6" />
           </Link>
         </div>
