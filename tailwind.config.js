@@ -17,6 +17,12 @@ module.exports = {
         },
         buttonColor: {
           50: '#302F4E'
+        },
+        lightBlue: {
+          50: "#302F4E"
+        },
+        lightBrown: {
+          50: "#C8B79B"
         }
       }
     },

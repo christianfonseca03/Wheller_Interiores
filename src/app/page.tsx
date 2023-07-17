@@ -12,8 +12,8 @@ export default function Home() {
        <Carrossel/>
        <Procedimento/>
        <Depoimentos/>
-       <Footer/>
       </main>
+      <Footer/>
     </>
   )
 }

@@ -9,8 +9,8 @@ export default function Projects() {
   return (
     <>
       <Header />
-      <main>
-        <h1 className="text-center mt-12 text-darkBlue-50 font-medium text-2xl mb-12">
+      <main className="bg-pageColor-50">
+        <h1 className="text-center text-darkBlue-50 pt-12 font-medium text-2xl mb-12">
           Projetos
         </h1>
         <section className="flex flex-col md:grid md:grid-cols-2 gap-8 px-8">
@@ -35,7 +35,7 @@ export default function Projects() {
             desc="Apartamento pica viu"
           />
         </section>
-        <section className="mt-10 flex flex-col justify-center items-center md:grid md:grid-cols-2">
+        <section className="mt-10 flex flex-col justify-center items-center md:grid md:grid-cols-2 pb-16">
           <div className="flex justify-center items-center">
             <h2 className="font-bold text-2xl w-1/2">
               Entre em contato para darmos início ao seu projeto dos sonhos!
@@ -53,8 +53,8 @@ export default function Projects() {
             </button>
           </div>
         </section>
-        <Footer/>
       </main>
+      <Footer/>
     </>
   );
 }
