@@ -32,7 +32,7 @@ export default function About() {
         </section>
         <section className="flex flex-col md:grid md:grid-cols-2 items-center justify-center py-16">
           <h2 className="text-center text-2xl font-medium text-darkBlue-50 mb-8 md:mb-0">
-            "Lorem ipsum dolor, sit amet consectetur adipisicing"
+            Lorem ipsum dolor, sit amet consectetur adipisicing
           </h2>
           <div className="flex justify-center">
             <button className="bg-buttonColor-50 text-white w-48 h-12 text-sm rounded-full">
