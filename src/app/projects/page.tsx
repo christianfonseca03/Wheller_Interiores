@@ -6,16 +6,26 @@ import Interiores1 from "../assets/interiores1.jpg";
 import Email from "../assets/email.png"
 import { Footer } from "../components/Footer";
 import axios from "axios";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+
+interface IFeedItem {
+  id: string,
+  media_url: string,
+  permalink: string,
+  media_type: "IMAGE" | "VIDEO"
+}
 
 export default function Projects() {
+
+  const [feedList, setFeedList] = useState<IFeedItem[]>([])
 
   async function getInstaFeed() {
     const token = process.env.INSTAGRAM_TOKEN;
     const fields = "media_url, media_type, permalink"
-    const url = `https://graph.instagram.com/me/media?access_token=${token}`
+    const url = `https://graph.instagram.com/me/media?access_token=${token}&fields=${fields}`
     const {data} = await axios.get(url)
     console.log(data)
+    setFeedList(data)
   }
 
   useEffect(() => {
@@ -68,6 +78,13 @@ export default function Projects() {
               Entre em contato por WhatsApp
             </button>
           </div>
+        </section>
+        <section>
+          {feedList.map(item => (
+            <a href={item.permalink} key={item.id}>
+              <img src={item.media_url} alt="" />
+            </a>
+          ))}
         </section>
       </main>
       <Footer/>
