@@ -58,7 +58,7 @@ export default function Projects() {
           <ProjectCard
             img={Interiores1.src}
             title="Apê Chris"
-            desc="Apartamento pica viu"
+            desc="Apartamento"
           />
         </section>
         <section className="mt-10 flex flex-col justify-center items-center md:grid md:grid-cols-2 pb-16">
