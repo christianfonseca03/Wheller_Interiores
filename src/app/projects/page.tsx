@@ -1,11 +1,27 @@
+'use client'
 import { Header } from "../components/Header";
 import { ProjectCard } from "../components/ProjectCard";
 
 import Interiores1 from "../assets/interiores1.jpg";
 import Email from "../assets/email.png"
 import { Footer } from "../components/Footer";
+import axios from "axios";
+import { useEffect } from "react";
 
 export default function Projects() {
+
+  async function getInstaFeed() {
+    const token = process.env.INSTAGRAM_TOKEN;
+    const fields = "media_url, media_type, permalink"
+    const url = `https://graph.instagram.com/me/media?access_token=${token}`
+    const {data} = await axios.get(url)
+    console.log(data)
+  }
+
+  useEffect(() => {
+    getInstaFeed()
+  }, [])
+
   return (
     <>
       <Header />
