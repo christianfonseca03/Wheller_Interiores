@@ -8,30 +8,14 @@ import { Footer } from "../components/Footer";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-interface IFeedItem {
-  id: string;
-  media_url: string;
-  permalink: string;
-  media_type: "IMAGE" | "VIDEO";
-}
+
 
 export default function Projects() {
-  const [feedList, setFeedList] = useState<IFeedItem[]>([]);
+ 
 
-  async function getInstaFeed() {
-    const token = process.env.NEXT_PUBLIC_INSTAGRAM_TOKEN;
-    const fields = "media_url, media_type, permalink";
-    const url = `https://graph.instagram.com/me/media?access_token=${token}&fields=${fields}`;
-    const { data } = await axios.get(url);
-    console.log(data);
-    setFeedList(data.data);
-  }
+  
 
-  useEffect(() => {
-    getInstaFeed();
-  }, []);
-
-  console.log(feedList, "aq");
+  
   return (
     <>
       <Header />
@@ -79,17 +63,7 @@ export default function Projects() {
             </button>
           </div>
         </section>
-        <section>
-          {feedList.map((item, index) => {
-            if (index < 3) {
-              return (
-                <a href={item.permalink} key={item.id}>
-                  <img src={item.media_url} alt="" />
-                </a>
-              );
-            }
-          })}
-        </section>
+       
       </main>
       <Footer />
     </>
