@@ -1,5 +1,4 @@
 "use client";
-require('dotenv').config()
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 import Interiores1 from "../assets/interiores1.jpg";
