@@ -1,15 +1,16 @@
 "use client";
 
-import Interiores1 from "../assets/interiores1.jpg";
-import Interiores2 from "../assets/interiores2.jpg";
+import QuartoRP from "../assets/capa_quartoRP.jpg";
+import QuartoAN from "../assets/capa_quartoAN.jpg";
+import LivingRP from "../assets/capa_Living_RP.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper";
+import { Autoplay, Navigation } from "swiper";
 
-import "swiper/css"
+import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/autoplay";
 
 export function Carrossel() {
-  
   return (
     <section>
       <Swiper
@@ -17,28 +18,17 @@ export function Carrossel() {
         slidesPerView={1}
         className="md:h-[613px]"
         navigation
-        modules={[Navigation]}
+        autoplay={{ delay: 4000 }}
+        modules={[Navigation, Autoplay]}
       >
         <SwiperSlide>
-          <img
-            src={Interiores1.src}
-            alt="carrossel"
-            className=" h-full w-full"
-          />
+          <img src={QuartoRP.src} alt="carrossel" className=" h-full w-full" />
         </SwiperSlide>
         <SwiperSlide>
-          <img
-            src={Interiores2.src}
-            alt="carrossel"
-            className=" h-full w-full"
-          />
+          <img src={LivingRP.src} alt="carrossel" className=" h-full w-full" />
         </SwiperSlide>
         <SwiperSlide>
-          <img
-            src={Interiores1.src}
-            alt="carrossel"
-            className=" h-full w-full"
-          />
+          <img src={QuartoAN.src} alt="carrossel" className=" h-full w-full" />
         </SwiperSlide>
       </Swiper>
     </section>

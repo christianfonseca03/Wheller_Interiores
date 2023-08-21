@@ -1,8 +1,42 @@
+"use client";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 import Interiores1 from "../assets/interiores1.jpg";
+import axios from "axios";
+import { useEffect, useState } from "react";
+import Link from "next/link";
+
+interface IFeedItem {
+  id: string;
+  media_url: string;
+  permalink: string;
+  media_type: "IMAGE" | "VIDEO";
+  caption: string;
+}
 
 export default function About() {
+  const [feedList, setFeedList] = useState<IFeedItem[]>([]);
+
+  async function getInstaFeed() {
+    const token = process.env.NEXT_PUBLIC_INSTAGRAM_TOKEN;
+    const fields = "media_url, media_type, permalink, caption";
+    const url = `https://graph.instagram.com/me/media?access_token=${token}&fields=${fields}`;
+    const { data } = await axios.get(url);
+    const returnedValues = data.data;
+    const imagesList: IFeedItem[] = [];
+    returnedValues.map((item: IFeedItem) => {
+      if (item.media_type !== "VIDEO") {
+        imagesList.push(item);
+      }
+    });
+
+    setFeedList(imagesList);
+  }
+
+  useEffect(() => {
+    getInstaFeed();
+  }, []);
+
   return (
     <>
       <Header />
@@ -13,13 +47,12 @@ export default function About() {
               Sobre Nós
             </h1>
             <p className="px-12">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-              vel laboriosam tenetur incidunt, reiciendis autem, quae
-              consequatur ipsa dolore cum sed nisi fugit quo, exercitationem
-              repellat maiores veritatis magni esse Lorem ipsum dolor sit amet,
-              consectetur adipisicing elit. Minus cumque earum sunt at ullam
-              soluta quis asperiores vero. Laudantium repellendus eius ad optio
-              quisquam sit necessitatibus enim incidunt explicabo veritatis.
+              Somos um escritório de Design de Interiores focados em projetos
+              residenciais e comerciais, fundado em 2020 por Luana Wheller,
+              desde então consolidando-se no mercado em Gravataí-RS, cidade base
+              do escritório, e região metropolitana de Porto Alegre. Nos
+              acompanhe em nossas redes sociais para conhecer um pouco mais
+              sobre a gente!
             </p>
           </div>
           <div className="w-full flex justify-center">
@@ -30,16 +63,44 @@ export default function About() {
             />
           </div>
         </section>
-        <section className="flex flex-col md:grid md:grid-cols-2 items-center justify-center py-16">
-          <h2 className="text-center text-2xl font-medium text-darkBlue-50 mb-8 md:mb-0">
-            Lorem ipsum dolor, sit amet consectetur adipisicing
-          </h2>
-          <div className="flex justify-center">
-            <button className="bg-buttonColor-50 text-white w-48 h-12 text-sm rounded-full">
+        <h2 className="text-center text-2xl font-medium text-darkBlue-50 mb-16 mt-8 ">
+          Acompanhe nossos últimos posts do Instagram!
+        </h2>
+        <section className="flex flex-col md:flex-row justify-center gap-16 mb-8 items-center">
+          {feedList.map((item, index) => {
+            if (index < 3) {
+              return (
+                <a
+                  href={item.permalink}
+                  key={item.id}
+                  target="_blank"
+                  className="flex flex-col justify-center items-center"
+                >
+                  <img
+                    src={item.media_url}
+                    alt="instagram post"
+                    className="h-96 w-80 md:w-96"
+                  />
+                  <p className="text-center w-80 max-h-5 font-medium mt-2">
+                    {item.caption.split("\n", 1)[0]}
+                  </p>
+                </a>
+              );
+            }
+          })}
+        </section>
+        <div className="flex justify-center py-12">
+          <Link
+            href={
+              "https://www.instagram.com/whellerinteriores/?igshid=MzRlODBiNWFlZA%3D%3D"
+            }
+            target="_blank"
+          >
+            <button className="bg-buttonColor-50 text-white w-48 h-12 text-sm rounded-full mb-4">
               Siga no Instagram
             </button>
-          </div>
-        </section>
+          </Link>
+        </div>
       </main>
       <Footer />
     </>

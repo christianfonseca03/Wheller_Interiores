@@ -13,23 +13,23 @@ export function Procedimento() {
       <section className="mt-12 flex flex-col justify-center items-center md:flex-row md:justify-evenly">
         <CardProcedimento
           img={Projeto.src}
-          title="PROJETO"
-          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie gravida pharetra. Etiam pellentesque sem non consequat porta. Quisque consequat nunc ut neque ornare pulvinar."
+          title="BRIEFING"
+          text="Antes de começarmos o projeto você preencherá um questionário para entendermos por completo as necessidades, gostos e desejos para o seu ambiente dos sonhos."
         />
         <CardProcedimento
           img={Dialogo.src}
-          title="DIÁLOGO"
-          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie gravida pharetra. Etiam pellentesque sem non consequat porta. Quisque consequat nunc ut neque ornare pulvinar."
+          title="PROJETO E APRESENTAÇÃO"
+          text="Colocamos a mão na massa para transformar em realidade tudo o que antes estava no mundo das ideias! Projetamos e apresentamos para você seu ambiente com imagens realistas para a melhor compreensão do que foi projetado."
         />
         <CardProcedimento
           img={Planejamento.src}
-          title="PLANEJAMENTO"
-          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie gravida pharetra. Etiam pellentesque sem non consequat porta. Quisque consequat nunc ut neque ornare pulvinar."
+          title="DETALHAMENTO"
+          text="Depois do projeto aprovado, seguimos para a etapa de detalhamento. Onde todo o projeto de marcenaria, iluminação, revestimentos, entre outros, são detalhados e especificados para que a execução ocorra conforme o projeto apresentado."
         />
         <CardProcedimento
           img={Obra.src}
-          title="OBRA"
-          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie gravida pharetra. Etiam pellentesque sem non consequat porta. Quisque consequat nunc ut neque ornare pulvinar."
+          title="ACOMPANHAMENTO"
+          text="Possuímos também o serviço de acompanhamento da execução do nosso projeto, para uma obra com menos incômodos e imprevistos."
         />
       </section>
     </>

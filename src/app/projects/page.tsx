@@ -1,21 +1,14 @@
-"use client";
 import { Header } from "../components/Header";
 import { ProjectCard } from "../components/ProjectCard";
-
-import Interiores1 from "../assets/interiores1.jpg";
-import Email from "../assets/email.png";
 import { Footer } from "../components/Footer";
-import axios from "axios";
-import { useEffect, useState } from "react";
 
-
+import Email from "../assets/email.png";
+import QuartoRP from "../assets/capa_quartoRP.jpg";
+import QuartoAN from "../assets/capa_quartoAN.jpg";
+import QuartoKidsRP from "../assets/capa_RpKIDS.jpg";
+import LivingRP from "../assets/capa_Living_RP.jpg";
 
 export default function Projects() {
- 
-
-  
-
-  
   return (
     <>
       <Header />
@@ -25,24 +18,24 @@ export default function Projects() {
         </h1>
         <section className="flex flex-col md:grid md:grid-cols-2 gap-8 px-8">
           <ProjectCard
-            img={Interiores1.src}
-            title="Apê Chris"
-            desc="Apartamento"
+            img={QuartoRP.src}
+            title="Quarto RP"
+            desc="Quarto de casal"
           />
           <ProjectCard
-            img={Interiores1.src}
-            title="Apê Chris"
-            desc="Apartamento"
+            img={QuartoAN.src}
+            title="Quarto AN"
+            desc="Quarto de casal"
           />
           <ProjectCard
-            img={Interiores1.src}
-            title="Apê Chris"
-            desc="Apartamento"
+            img={QuartoKidsRP.src}
+            title="Quarto kids RP"
+            desc="Um ambiente vivo e atemporal que evolui junto com a criança."
           />
           <ProjectCard
-            img={Interiores1.src}
-            title="Apê Chris"
-            desc="Apartamento"
+            img={LivingRP.src}
+            title="Living RP"
+            desc="Para proporcionar momentos de qualidade com família e amigos"
           />
         </section>
         <section className="mt-10 flex flex-col justify-center items-center md:grid md:grid-cols-2 pb-16">
@@ -54,7 +47,7 @@ export default function Projects() {
 
           <div className="flex flex-col justify-center items-center mt-8">
             <h3 className="text-xl font-semibold">Contato</h3>
-            <div className="flex items-center my-2">
+            <div className="flex items-center my-4">
               <img src={Email.src} alt="email" className="h-6 w-6 mr-2" />
               <p>contato.whellerinteriores@gmail.com</p>
             </div>
@@ -63,7 +56,6 @@ export default function Projects() {
             </button>
           </div>
         </section>
-       
       </main>
       <Footer />
     </>

@@ -12,7 +12,7 @@ export function Depoimentos() {
   
   return (
     <section className="pb-16">
-      <h1 className="text-center mt-12 text-darkBlue-50 font-medium text-2xl">
+      <h1 className="text-center mt-8 text-darkBlue-50 font-medium text-2xl">
         Depoimentos
       </h1>
 
