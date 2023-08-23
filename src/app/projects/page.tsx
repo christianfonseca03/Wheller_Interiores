@@ -21,21 +21,25 @@ export default function Projects() {
             img={QuartoRP.src}
             title="Quarto RP"
             desc="Quarto de casal"
+            page="/projects/quartoRP"
           />
           <ProjectCard
             img={QuartoAN.src}
             title="Quarto AN"
             desc="Quarto de casal"
+            page="/projects/quartoAN"
           />
           <ProjectCard
             img={QuartoKidsRP.src}
             title="Quarto kids RP"
             desc="Um ambiente vivo e atemporal que evolui junto com a criança."
+            page="/projects/quartoKidsRP"
           />
           <ProjectCard
             img={LivingRP.src}
             title="Living RP"
             desc="Para proporcionar momentos de qualidade com família e amigos"
+            page="/projects/livingRP"
           />
         </section>
         <section className="mt-10 flex flex-col justify-center items-center md:grid md:grid-cols-2 pb-16">
