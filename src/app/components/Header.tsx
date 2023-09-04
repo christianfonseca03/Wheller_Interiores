@@ -51,7 +51,7 @@ export function Header() {
           <Link href={"/"}>
             <img src={User.src} alt="Login" className="h-6 w-6" />
           </Link>
-          <Link href={"/"}>
+          <Link href={"https://wa.me/5551995140398?"} target="_blank">
             <img
               src={Whatsapp.src}
               alt="Whatsapp"
@@ -82,7 +82,7 @@ export function Header() {
           <Link href={"/"}>
             <img src={User.src} alt="Login" className="h-6 w-6" />
           </Link>
-          <Link href={"/"}>
+          <Link href={"https://wa.me/5551995140398?"} target="_blank">
             <img src={Whatsapp.src} alt="Whatsapp" className="h-6 w-6 mx-4" />
           </Link>
           <Link
