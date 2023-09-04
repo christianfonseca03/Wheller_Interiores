@@ -6,9 +6,9 @@ export function Footer() {
       <img src={Logo.src} alt="Wheller interiores" className="h-36 w-auto md:block hidden" />
       <div className="flex flex-col text-white justify-center items-center md:items-start md:mr-8 my-4 md:my-0">
         <h1 className="text-xl font-medium mb-1">Contato</h1>
-        <p className="font-light">(55) 51 123456789</p>
-        <p className="font-light">contato.whellerinteriores@gmail.com</p>
-        <p className="font-light">@naoLembroTeuInsta</p>
+        <p className="font-light">(55) 51 9514-0398</p>
+        <p className="font-light">contatowhellerinteriores@gmail.com</p>
+        <p className="font-light">@whellerinteriores</p>
       </div>
       <img src={Logo.src} alt="Wheller interiores" className="h-36 w-auto md:hidden" />
     </footer>
