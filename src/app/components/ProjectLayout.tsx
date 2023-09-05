@@ -24,9 +24,9 @@ export function ProjectLayout({ img, title, description, description2 }: Project
             className="rounded-full w-36 h-36"
           />
           <h1 className="font-medium mt-4 text-lg">{title}</h1>
-          <div className="bg-black h-[2px] w-1/2 my-2"></div>
-          <p className="w-1/2 mb-1">{description}</p>
-          <p className="w-1/2">{description2}</p>
+          <div className="bg-black h-[1px] md:w-1/2 w-full my-2"></div>
+          <p className="md:w-1/2 mb-1">{description}</p>
+          <p className="md:w-1/2">{description2}</p>
         </section>
       </main>
     </>
