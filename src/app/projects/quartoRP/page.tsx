@@ -4,15 +4,14 @@ import { ProjectLayout } from "@/app/components/ProjectLayout";
 import Teste from "../../assets/interiores1.jpg";
 
 export default function QuartoRP() {
+  const desc = [
+    "- A paleta do quarto com tons naturais de madeira, cores claras e frias e texturas naturais se juntam criando a atmosfera refrescante e aconchegante.",
+    "- O tom de madeira enche o quarto enquanto as cores frias provocam a sensação de calma e clareza. Um quarto que nos convida a desacelerar, meditar e descansar.",
+  ];
   return (
     <>
       <Header />
-      <ProjectLayout
-        img={Teste.src}
-        title="Quarto RP"
-        description="- A paleta do quarto com tons naturais de madeira, cores claras e frias e texturas naturais se juntam criando a atmosfera refrescante e aconchegante. "
-        description2="- O tom de madeira enche o quarto enquanto as cores frias provocam a sensação de calma e clareza. Um quarto que nos convida a desacelerar, meditar e descansar."
-      />
+      <ProjectLayout img={Teste.src} title="Quarto RP" description={desc} />
     </>
   );
 }

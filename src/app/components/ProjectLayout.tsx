@@ -5,11 +5,10 @@ import { ReactNode } from "react";
 interface ProjectLayoutProps {
   img: string;
   title: string;
-  description: string;
-  description2: string;
+  description: string[];
 }
 
-export function ProjectLayout({ img, title, description, description2 }: ProjectLayoutProps) {
+export function ProjectLayout({ img, title, description }: ProjectLayoutProps) {
   return (
     <>
       <Link href={"/projects"} className="flex items-center pt-4 pl-4">
@@ -25,8 +24,9 @@ export function ProjectLayout({ img, title, description, description2 }: Project
           />
           <h1 className="font-medium mt-4 text-lg">{title}</h1>
           <div className="bg-black h-[1px] md:w-1/2 w-full my-2"></div>
-          <p className="md:w-1/2 mb-1">{description}</p>
-          <p className="md:w-1/2">{description2}</p>
+          {description.map((desc) => {
+            return <p className="md:w-1/2 mb-1">{desc}</p>;
+          })}
         </section>
       </main>
     </>
