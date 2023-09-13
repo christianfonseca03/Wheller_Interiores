@@ -25,7 +25,7 @@ export function ProjectLayout({ img, title, description }: ProjectLayoutProps) {
           <h1 className="font-medium mt-4 text-lg">{title}</h1>
           <div className="bg-black h-[1px] md:w-1/2 w-full my-2"></div>
           {description.map((desc) => {
-            return <p className="md:w-1/2 mb-1">{desc}</p>;
+            return <p className="md:w-1/2 mb-1" key={desc}>{desc}</p>;
           })}
         </section>
       </main>
