@@ -21,8 +21,8 @@ export default function LivingRP() {
       <Header />
       <ProjectLayout title="Living RP" img={Teste.src} description={desc} />
       <section className="grid grid-cols-4 gap-4 md:w-1/2 w-4/5 mx-auto justify-center mt-8 mb-28">
-        <img src={Foto1.src} className="col-span-2 md:h-full" alt="" />
-        <img src={Foto2.src} className="col-span-2 md:h-full" alt="" />
+        <img src={Foto1.src} className="col-span-2 md:h-full sm:h-full" alt="" />
+        <img src={Foto2.src} className="col-span-2 md:h-full sm:h-full" alt="" />
         <img
           src={FotoVertical.src}
           className="row-span-2 row-start-1 col-start-3 col-span-2 md:h-full"
