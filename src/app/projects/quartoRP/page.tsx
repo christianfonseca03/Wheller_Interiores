@@ -29,8 +29,8 @@ export default function QuartoRP() {
           className="row-span-2 row-start-1 col-start-1 col-span-2 md:h-full h-[272px]"
           alt=""
         />
-        <img src={Foto1.src} className="col-span-2 md:h-full h-32" alt="" />
-        <img src={Foto4.src} className="col-span-2 md:h-full h-32" alt="" />
+        <img src={Foto1.src} className="col-span-2 md:h-full h-[132px]" alt="" />
+        <img src={Foto4.src} className="col-span-2 md:h-full h-[132px]" alt="" />
         <img
           src={Foto3.src}
           className="col-span-4 md:h-64 h-40 w-full"
@@ -43,8 +43,8 @@ export default function QuartoRP() {
           className="row-span-2 row-start-4 col-start-3 col-span-2 md:h-full h-[272px]"
           alt=""
         />
-        <img src={Foto6.src} className="col-span-2 md:h-auto h-32" alt="" />
-        <img src={Foto7.src} className="col-span-2 md:h-auto h-32" alt="" />
+        <img src={Foto6.src} className="col-span-2 md:h-auto h-[132px]" alt="" />
+        <img src={Foto7.src} className="col-span-2 md:h-auto h-[132px]" alt="" />
       </section>
       <Footer />
     </>
