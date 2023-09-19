@@ -23,7 +23,7 @@ export default function QuartoRP() {
     <>
       <Header />
       <ProjectLayout img={Teste.src} title="Quarto RP" description={desc} />
-      <section className="grid grid-cols-4 gap-4 md:w-1/2 w-4/5 mx-auto justify-center mt-8 mb-28">
+      <section className="grid grid-cols-4 gap-2 md:gap-4 md:w-1/2 w-4/5 mx-auto justify-center mt-8 mb-28">
         <img
           src={Vertical1.src}
           className="row-span-2 row-start-1 col-start-1 col-span-2 md:h-full h-[272px]"
