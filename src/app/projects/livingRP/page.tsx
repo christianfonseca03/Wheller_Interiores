@@ -25,7 +25,7 @@ export default function LivingRP() {
         <img src={Foto2.src} className="col-span-2 md:h-full h-32" alt="" />
         <img
           src={FotoVertical.src}
-          className="row-span-2 row-start-1 col-start-3 col-span-2 md:h-full"
+          className="row-span-2 row-start-1 col-start-3 col-span-2 md:h-full h-72"
           alt=""
         />
         <img src={Foto3.src} className="col-span-4 md:h-64 h-40 w-full" alt="" />
