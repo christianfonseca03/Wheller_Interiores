@@ -29,8 +29,8 @@ export default function LivingRP() {
           alt=""
         />
         <img src={Foto3.src} className="col-span-4 md:h-64 h-40 w-full" alt="" />
-        <img src={Foto4.src} className="col-span-2" alt="" />
-        <img src={Foto5.src} className="col-span-2" alt="" />
+        <img src={Foto4.src} className="col-span-2 md:h-auto h-32" alt="" />
+        <img src={Foto5.src} className="col-span-2 md:h-auto h-32" alt="" />
       </section>
       <Footer />
     </>
