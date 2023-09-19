@@ -36,8 +36,8 @@ export default function QuartoRP() {
           className="col-span-4 md:h-64 h-40 w-full"
           alt=""
         />
-        <img src={Foto2.src} className="col-span-2 md:h-full h-32" alt="" />
-        <img src={Foto5.src} className="col-span-2 md:h-full h-32" alt="" />
+        <img src={Foto2.src} className="col-span-2 md:h-full h-[132px]" alt="" />
+        <img src={Foto5.src} className="col-span-2 md:h-full h-[132px]" alt="" />
         <img
           src={Vertical2.src}
           className="row-span-2 row-start-4 col-start-3 col-span-2 md:h-full h-[272px]"
