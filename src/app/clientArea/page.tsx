@@ -53,7 +53,7 @@ export default function ClientArea() {
             );
           })}
         </section>
-        <div className="flex justify-center md:pt-16 pt-8">
+        <div className="flex justify-center md:pt-16 py-8">
           <button
             onClick={handleSignOut}
             className="h-8 w-12 rounded-xl bg-red-700 text-white"
