@@ -1,6 +1,6 @@
 import { useUser } from "@clerk/nextjs";
 
-export const checkSession = () => {
+export const useCheckSession = () => {
   const { user } = useUser();
   if (user) {
     return true;

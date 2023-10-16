@@ -8,14 +8,14 @@ import Nav from "../assets/cardapio.png";
 import Instagram from "../assets/instagram.png";
 import Whatsapp from "../assets/whatsapp.png";
 import User from "../assets/do-utilizador.png";
-import { checkSession } from "./utils/checkSession";
+import { useCheckSession } from "./utils/useCheckSession";
 
 export function Header() {
   const [openMenu, setOpenMenu] = useState(false);
   const handleOpenMenu = () => {
     setOpenMenu(!openMenu);
   };
-  const sessionExists = checkSession();
+  const sessionExists = useCheckSession();
   return (
     <header
       className={
