@@ -3,13 +3,15 @@
 @tailwind utilities;
 
 :root {
-    --swiper-theme-color: #D9D0C7 !important;
+  --swiper-theme-color: #d9d0c7 !important;
 }
 
-.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
-    color: #130D31
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  color: #130d31;
 }
 
-.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
-    color: #130D31
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  color: #130d31;
 }

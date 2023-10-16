@@ -7,6 +7,7 @@ import QuartoRP from "../assets/capa_quartoRP.jpg";
 import QuartoAN from "../assets/capa_quartoAN.jpg";
 import QuartoKidsRP from "../assets/capa_RpKIDS.jpg";
 import LivingRP from "../assets/capa_Living_RP.jpg";
+import Link from "next/link";
 
 export default function Projects() {
   return (
@@ -55,9 +56,11 @@ export default function Projects() {
               <img src={Email.src} alt="email" className="h-6 w-6 mr-2" />
               <p>contato.whellerinteriores@gmail.com</p>
             </div>
-            <button className="bg-buttonColor-50 text-white w-48 h-12 text-sm rounded-full">
-              Entre em contato por WhatsApp
-            </button>
+            <Link href={"https://wa.me/5551995140398?"} target="_blank">
+              <button className="bg-buttonColor-50 text-white w-48 h-12 text-sm rounded-full">
+                Entre em contato por WhatsApp
+              </button>
+            </Link>
           </div>
         </section>
       </main>
