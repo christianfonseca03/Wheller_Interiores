@@ -31,7 +31,7 @@ export default function ClientArea() {
     <div className="flex flex-col min-h-screen">
       <Header />
       <main className="bg-pageColor-50 flex-1">
-        <h1 className="text-darkBlue-50 font-medium text-2xl mb-6 text-center pt-12">
+        <h1 className="text-darkBlue-50 font-medium text-2xl mb-6 md:mb-14 text-center pt-12">
           Área do cliente
         </h1>
         <section className="flex md:flex-row flex-col justify-center items-center">
@@ -44,7 +44,7 @@ export default function ClientArea() {
                 <h1 className="text-darkBlue-50 font-medium text-lg mb-2">
                   {doc.titulo}
                 </h1>
-                <button className="bg-darkBlue-50 text-white h-14 w-20 rounded-3xl">
+                <button className="bg-buttonColor-50 hover:bg-darkBlue-50/90 transition-colors text-white h-14 w-20 rounded-3xl">
                   <a href={doc.link} target="_blank">
                     Acessar
                   </a>
@@ -56,7 +56,7 @@ export default function ClientArea() {
         <div className="flex justify-center md:pt-16 py-8">
           <button
             onClick={handleSignOut}
-            className="h-8 w-12 rounded-xl bg-red-700 text-white"
+            className="h-8 w-12 rounded-xl bg-red-600 hover:bg-red-700 transition-colors text-white"
           >
             SAIR
           </button>

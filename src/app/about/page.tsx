@@ -96,7 +96,7 @@ export default function About() {
             }
             target="_blank"
           >
-            <button className="bg-buttonColor-50 text-white w-48 h-12 text-sm rounded-full mb-4">
+            <button className="bg-buttonColor-50 hover:bg-darkBlue-50/90 transition-colors text-white w-48 h-12 text-sm rounded-full mb-4">
               Siga no Instagram
             </button>
           </Link>

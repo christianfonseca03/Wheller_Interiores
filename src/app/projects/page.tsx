@@ -57,7 +57,7 @@ export default function Projects() {
               <p>contato.whellerinteriores@gmail.com</p>
             </div>
             <Link href={"https://wa.me/5551995140398?"} target="_blank">
-              <button className="bg-buttonColor-50 text-white w-48 h-12 text-sm rounded-full">
+              <button className="bg-buttonColor-50 hover:bg-darkBlue-50/90 transition-colors text-white w-48 h-12 text-sm rounded-full">
                 Entre em contato por WhatsApp
               </button>
             </Link>

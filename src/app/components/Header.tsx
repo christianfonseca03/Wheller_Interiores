@@ -80,11 +80,11 @@ export function Header() {
 
       <nav className="bg-darkBlue-50 text-white hidden transition-all md:flex md:w-full md:justify-center md:relative">
         <div className="mr-64">
-          <Link href={"/"}>HOME</Link>
-          <Link href={"/projects"} className="mx-8">
+          <Link href={"/"} className="hover:text-gray-300 transition-colors">HOME</Link>
+          <Link href={"/projects"} className="mx-8 hover:text-gray-300 transition-colors">
             PROJETOS
           </Link>
-          <Link href={"/about"}>SOBRE NÓS</Link>
+          <Link href={"/about"} className="hover:text-gray-300 transition-colors">SOBRE NÓS</Link>
         </div>
 
         <div className="flex items-center justify-center right-16 absolute">
