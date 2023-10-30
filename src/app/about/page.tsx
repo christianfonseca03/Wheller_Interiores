@@ -66,9 +66,9 @@ export default function About() {
         <h2 className="text-center text-2xl font-medium text-darkBlue-50 mb-16 mt-8 ">
           Acompanhe nossos últimos posts do Instagram!
         </h2>
-        <section className="flex flex-col md:flex-row justify-center gap-16 mb-8 items-center">
+        <section className="flex flex-col md:flex-row justify-evenly gap-16 md:gap-0 mb-8 items-center">
           {feedList.map((item, index) => {
-            if (index < 3) {
+            if (index < 5) {
               return (
                 <a
                   href={item.permalink}
@@ -79,11 +79,9 @@ export default function About() {
                   <img
                     src={item.media_url}
                     alt="instagram post"
-                    className="h-96 w-80 md:w-96"
+                    className="h-72 w-80 md:w-64"
                   />
-                  <p className="text-center w-80 max-h-5 font-medium mt-2">
-                    {item.caption.split("\n", 1)[0]}
-                  </p>
+                 
                 </a>
               );
             }

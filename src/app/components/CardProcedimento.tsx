@@ -11,7 +11,7 @@ export function CardProcedimento({ img, title, text }: CardProps) {
         <img src={img} alt="Etapa" className="w-14 h-14 mb-3" />
         <h1 className="mb-1 text-darkBlue-50">{title}</h1>
       </div>
-      <p className="font-light text-center">{text}</p>
+      <p className="font-light text-left">{text}</p>
     </div>
   );
 }
