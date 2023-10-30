@@ -79,7 +79,7 @@ export default function About() {
                   <img
                     src={item.media_url}
                     alt="instagram post"
-                    className="h-72 w-64"
+                    className="md:h-72 h-80 w-72 md:w-64"
                   />
                  
                 </a>
