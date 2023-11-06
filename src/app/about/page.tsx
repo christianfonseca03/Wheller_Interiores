@@ -81,7 +81,6 @@ export default function About() {
                     alt="instagram post"
                     className="md:h-72 h-80 w-72 md:w-64"
                   />
-                 
                 </a>
               );
             }
