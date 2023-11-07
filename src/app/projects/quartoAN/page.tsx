@@ -22,9 +22,9 @@ export default function QuartoAN() {
         <img src={Foto1.src} alt="" className="col-span-2 md:h-96 h-[132px]" />
         <img src={Foto3.src} alt="" className="col-span-2 md:h-96 h-[132px]" />
         <img src={Foto2.src} alt="" className="col-span-4 md:h-80 h-40 w-full" />
-        <img src={Foto4.src} alt="" className="col-span-2 md:h-full h-[132px]" />
-        <img src={Foto5.src} alt="" className="col-span-2 md:h-full h-[132px]" />
-        <img src={Vertical1.src} alt="" className="row-span-2 row-start-3 col-start-3 col-span-2 md:h-full h-[272px] w-full" />
+        <img src={Foto4.src} alt="" className="col-span-2 md:h-full h-[132px] md:max-h-[364.34px]" />
+        <img src={Foto5.src} alt="" className="col-span-2 md:h-full h-[132px] md:max-h-[364.34px]" />
+        <img src={Vertical1.src} alt="" className="row-span-2 row-start-3 col-start-3 col-span-2 md:h-full h-[272px] w-full md:max-h-[744.688px]" />
       </section>
       <Footer/>
     </>

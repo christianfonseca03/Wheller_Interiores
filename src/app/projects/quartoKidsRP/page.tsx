@@ -26,17 +26,17 @@ export default function QuartoKidsRP() {
       <section className="grid grid-cols-4 gap-2 md:gap-4 md:w-3/5 w-4/5 mx-auto justify-center mt-8 md:mb-28 mb-20">
         <img
           src={Vert1.src}
-          className="row-span-2 row-start-1 col-start-1 col-span-2 md:h-full h-[272px] w-full"
+          className="row-span-2 row-start-1 col-start-1 col-span-2 md:h-full h-[272px] w-full md:max-h-[744.688px]"
           alt=""
         />
         <img
           src={Foto1.src}
-          className="col-span-2 md:h-full h-[132px]"
+          className="col-span-2 md:h-full h-[132px] md:max-h-[364.34px]"
           alt=""
         />
         <img
           src={Foto4.src}
-          className="col-span-2 md:h-full h-[132px]"
+          className="col-span-2 md:h-full h-[132px] md:max-h-[364.34px]"
           alt=""
         />
         <img
