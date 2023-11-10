@@ -21,13 +21,13 @@ export default function Projects() {
           <ProjectCard
             img={QuartoRP.src}
             title="Quarto RP"
-            desc="Quarto de casal"
+            desc="Um quarto que nos convida a desacelerar, meditar e descansar."
             page="/projects/quartoRP"
           />
           <ProjectCard
             img={QuartoAN.src}
             title="Quarto AN"
-            desc="Quarto de casal"
+            desc="Um design que mescla o clássico com o moderno."
             page="/projects/quartoAN"
           />
           <ProjectCard

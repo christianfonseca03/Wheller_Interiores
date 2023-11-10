@@ -11,7 +11,7 @@ import { Footer } from "@/app/components/Footer";
 export default function QuartoRP() {
   const desc = [
     "- A paleta do quarto com tons naturais de madeira, cores claras e frias e texturas naturais se juntam criando a atmosfera refrescante e aconchegante.",
-    "- O tom de madeira enche o quarto enquanto as cores frias provocam a sensação de calma e clareza. Um quarto que nos convida a desacelerar, meditar e descansar.",
+    "- O tom de madeira enche o quarto enquanto as cores frias provocam a sensação de calma e clareza.",
   ];
   return (
     <>
