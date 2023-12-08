@@ -4,7 +4,6 @@ import Vertical1 from "./images/00000.png";
 import Foto1 from "./images/01_Photo - 32.jpg";
 import Foto3 from "./images/01_Photo - 33.jpg";
 import Foto4 from "./images/01_Photo - 34.jpg";
-import Foto6 from "./images/01_Photo - 35.jpg";
 import Foto7 from "./images/01_Photo - 38.jpg";
 import { Footer } from "@/app/components/Footer";
 

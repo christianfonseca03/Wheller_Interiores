@@ -34,29 +34,26 @@ export default function ClientArea() {
         <h1 className="text-darkBlue-50 font-medium text-2xl mb-6 md:mb-14 text-center pt-12">
           Área do cliente
         </h1>
-        <section className="flex md:flex-row flex-col justify-center items-center">
+        <section className="flex flex-col justify-center items-center">
           {metaDataTreated.map((doc, index) => {
             return (
-              <div
+              <ul
+                className="text-darkBlue-50 font-medium text-lg mb-2 list-disc w-36"
                 key={index}
-                className="flex flex-col justify-center items-center md:mx-8 mb-4 last:mb-0 md:mb-0"
               >
-                <h1 className="text-darkBlue-50 font-medium text-lg mb-2">
-                  {doc.titulo}
-                </h1>
-                <button className="bg-buttonColor-50 hover:bg-darkBlue-50/90 transition-colors text-white h-14 w-20 rounded-3xl">
+                <li className="text-left">
                   <a href={doc.link} target="_blank">
-                    Acessar
+                    {doc.titulo}
                   </a>
-                </button>
-              </div>
+                </li>
+              </ul>
             );
           })}
         </section>
         <div className="flex justify-center md:pt-16 py-8">
           <button
             onClick={handleSignOut}
-            className="h-8 w-12 rounded-xl bg-red-600 hover:bg-red-700 transition-colors text-white"
+            className="h-8 w-12 rounded-xl bg-buttonColor-50 hover:bg-darkBlue-50/90 transition-colors text-white"
           >
             SAIR
           </button>
