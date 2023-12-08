@@ -20,27 +20,29 @@ export default function QuartoRP() {
       <section className="grid grid-cols-4 gap-2 md:gap-4 md:w-3/5 w-4/5 mx-auto justify-center mt-8 md:mb-28 mb-20">
         <img
           src={Vertical1.src}
-          className="row-span-2 row-start-1 col-start-1 col-span-2 md:h-full md:max-h-[744.688px] h-[272px] w-full"
+          className="row-span-3 row-start-1 col-start-1 col-span-2 max-h-full max-w-full"
           alt=""
         />
         <img
           src={Foto1.src}
-          className="col-span-2 md:h-full md:max-h-[364.34px] h-[132px]"
+          className="col-span-2 max-h-full max-w-full"
           alt=""
         />
         <img
           src={Foto4.src}
-          className="col-span-2 md:h-full h-[132px] md:max-h-[364.34px]"
+          className="col-span-2 max-h-full max-w-full"
+          alt=""
+        />
+        <img
+          src={Foto7.src}
+          className="col-span-2 max-h-full max-w-full"
           alt=""
         />
         <img
           src={Foto3.src}
-          className="col-span-4 md:h-80 h-40 w-full"
+          className="col-span-4 max-h-full max-w-full"
           alt=""
         />
-
-        <img src={Foto6.src} className="col-span-2 md:h-96 h-[132px]" alt="" />
-        <img src={Foto7.src} className="col-span-2 md:h-96 h-[132px]" alt="" />
       </section>
       <Footer />
     </>
