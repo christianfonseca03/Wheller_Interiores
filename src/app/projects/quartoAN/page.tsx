@@ -19,14 +19,33 @@ export default function QuartoAN() {
       <Header />
       <ProjectLayout img={Foto5.src} title="Quarto AN" description={desc} />
       <section className="grid grid-cols-4 gap-2 md:gap-4 md:w-3/5 w-4/5 mx-auto justify-center mt-8 md:mb-28 mb-20">
-        <img src={Foto1.src} alt="" className="col-span-2 md:h-96 h-[132px]" />
-        <img src={Foto3.src} alt="" className="col-span-2 md:h-96 h-[132px]" />
-        <img src={Foto2.src} alt="" className="col-span-4 md:h-80 h-40 w-full" />
-        <img src={Foto4.src} alt="" className="col-span-2 md:h-full h-[132px] md:max-h-[364.34px]" />
-        <img src={Foto5.src} alt="" className="col-span-2 md:h-full h-[132px] md:max-h-[364.34px]" />
-        <img src={Vertical1.src} alt="" className="row-span-2 row-start-3 col-start-3 col-span-2 md:h-full h-[272px] w-full md:max-h-[744.688px]" />
+        <img
+          src={Foto2.src}
+          alt=""
+          className="col-span-4 max-h-full max-w-full"
+        />
+        <img
+          src={Foto4.src}
+          alt=""
+          className="col-span-2 max-h-full max-w-full"
+        />
+        <img
+          src={Foto5.src}
+          alt=""
+          className="col-span-2 max-h-full max-w-full"
+        />
+        <img
+          src={Foto3.src}
+          alt=""
+          className="col-span-2 max-h-full max-w-full"
+        />
+        <img
+          src={Vertical1.src}
+          alt=""
+          className="row-span-3 row-start-2 col-start-3 col-span-2 max-h-full max-w-full"
+        />
       </section>
-      <Footer/>
+      <Footer />
     </>
   );
 }
