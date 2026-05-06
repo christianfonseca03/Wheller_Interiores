@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-ChildItem \"c:\\\\Users\\\\kesh\\\\Projetos\\\\Wheller_Interiores\\\\node_modules\\\\swiper\\\\\" | Where-Object { $_.Name -match \"\\\\.d\\\\.ts$|types\" } | Select-Object Name)"
+    ]
+  }
+}
