@@ -7,15 +7,12 @@ import Logo from "../assets/loguinho.png";
 import Nav from "../assets/cardapio.png";
 import Instagram from "../assets/instagram.png";
 import Whatsapp from "../assets/whatsapp.png";
-import User from "../assets/do-utilizador.png";
-import { useCheckSession } from "./utils/useCheckSession";
 
 export function Header() {
   const [openMenu, setOpenMenu] = useState(false);
   const handleOpenMenu = () => {
     setOpenMenu(!openMenu);
   };
-  const sessionExists = useCheckSession();
   return (
     <header
       className={
@@ -57,9 +54,6 @@ export function Header() {
           SOBRE NÓS
         </Link>
         <div className="flex items-center mt-2">
-          <Link href={sessionExists ? "/clientArea" : "/loginPage"}>
-            <img src={User.src} alt="Login" className="h-6 w-6" />
-          </Link>
           <Link href={"https://wa.me/5551995140398?"} target="_blank">
             <img
               src={Whatsapp.src}
@@ -88,9 +82,6 @@ export function Header() {
         </div>
 
         <div className="flex items-center justify-center right-16 absolute">
-          <Link href={sessionExists ? "/clientArea" : "/loginPage"}>
-            <img src={User.src} alt="Login" className="h-6 w-6" />
-          </Link>
           <Link href={"https://wa.me/5551995140398?"} target="_blank">
             <img src={Whatsapp.src} alt="Whatsapp" className="h-6 w-6 mx-4" />
           </Link>
